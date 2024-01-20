@@ -1,0 +1,161 @@
+a.ksdl-toggle{ color: #007fff !important; text-decoration: none; /* aux */ border: 0px solid black; }
+
+a.ksdl-toggle:hover{ text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+
+a.ksdl-toggle_zero{ color: #999999 !important; }
+
+div.ksdl-container div, div.ksdl-container button, div.ksdl-container p, div.ksdl-container input{
+
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+div.ksdl-container
+{
+
+  background-color: #FFFFFF;
+  font-weight: normal;
+  border: 1px solid #999999;
+  border-radius: 0;
+
+  width: 300px;
+  height: auto;
+  max-height: 350px;
+  
+  top: 0;
+  left: 0;
+
+  position: absolute;
+  z-index: 999;
+
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+div.ksdl-container div.ksdl-ctrl{ text-align: left; width: 100%; padding: 4px; /* aux */ border: 0px solid magenta; }
+
+div.ksdl-container div.ksdl-ctrl button{
+
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+
+  border-radius: 0;
+
+}
+
+div.ksdl-container div.ksdl-ctrl button.ksdl-selection{
+  
+  color: #333333;
+  background-color: #cce4ff;
+  border: 1px solid #666666;
+
+  width: 20%;
+  padding: 6px 10px;
+
+  display: inline-block;
+
+}
+div.ksdl-container div.ksdl-ctrl button.ksdl-selection:hover{  
+
+  color: #007fff;
+  background-color: #e6f2ff;
+  border: 1px solid #666666;
+
+  cursor: pointer;
+
+}
+
+div.ksdl-container div.ksdl-ctrl button.ksdl-clear{
+  
+  color: #333333;
+  background-color: #FFFFFF;
+  border: 1px solid #666666;
+
+  width: 26px;
+  padding: 6px;
+  margin-left: -26px;
+
+  display: none;
+
+}
+div.ksdl-container div.ksdl-ctrl button.ksdl-clear:hover{ 
+
+  color: #FF0000;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+
+  cursor: pointer;
+
+}
+
+div.ksdl-container div.ksdl-ctrl input:focus{ outline: none; }
+
+div.ksdl-container div.ksdl-ctrl input[type=text].ksdl-search{  
+
+  font-size: 10px;
+  font-weight: normal;
+  text-align: left;
+  
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #666666;
+  border-radius: 0;
+
+  width: 80%;
+  
+  padding: 6px 6px;
+  margin-left: -1px;
+
+  display: inline-block;
+
+}
+
+div.ksdl-container div.ksdl-ctrl input[type=text].ksdl-search_fail{ color: #ec1313; background-color: #fde7e7; }
+
+div.ksdl-container div.ksdl-list{ width: 100%; flex: 1; overflow-y: auto; /* aux */ border: 0px solid blue; }
+
+div.ksdl-container div.ksdl-list{ width: 100%; list-style-type: none; /* aux */ border: 0px solid red; }
+
+div.ksdl-container div.ksdl-list label.ksdl-label{
+  
+  color: #666666;
+
+  padding: 4px 8px;
+
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+
+  /* aux */ border: 0px solid lime;
+
+}
+
+div.ksdl-container div.ksdl-list label.ksdl-label_checked{ color: #000000; }
+
+div.ksdl-container div.ksdl-list label.ksdl-label:hover{ color: #007fff; background-color: #e6f2ff; cursor: default; }
+
+div.ksdl-container div.ksdl-list label.ksdl-label input[type=checkbox].ksdl-item{ margin-right: 6px; }
+
+div.ksdl-container div.ksdl-list label.ksdl-label input[type=radio].ksdl-item{ margin-right: 6px; }
+
+/*
+
+-- kSDL v2023.1201 --
+
+https://appnexa.net/dev/kSDL/v2023.1201/
+
+by Ivo Rubim
+
+page: https://appnexa.net/dev/ivorubim/ 
+contact: rubim.ivo@gmail.com
+
+*/
